@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  dev:
+    image: node:6
+    container_name: docker-npm
+    command: npm run dev
+    volumes:
+      - ./public:/var/www/app
+    ports:
+      - 8080:8080
